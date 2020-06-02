@@ -1,0 +1,28 @@
+{
+  "name": "rest-server",
+  "version": "1.0.0",
+  "description": "Una rest API robusta",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server",
+    "dev": "nodemon server/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "rest"
+  ],
+  "author": "Ricardo Pineda <pinedaricardo587@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
