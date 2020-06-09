@@ -30,5 +30,5 @@ if (process.env.NODE_ENV === 'dev') {
 }else{
   MONGO_URL = "mongodb+srv://Ricardo:atlasadmin@cluster0-fq1iz.mongodb.net/coffee-store?retryWrites=true&w=majority"
 }
-console.log(MONGO_URL)
+
 process.env.MONGO_URI = MONGO_URL
