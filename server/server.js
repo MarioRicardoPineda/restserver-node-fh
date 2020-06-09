@@ -11,9 +11,9 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 app.use( require('./routes/usuario') )
-
+let MONGO_URL = process.env.MONGO_URI
 mongoose.connect(
-  process.env.MONGO_URI, 
+  MONGO_URL, 
   {useNewUrlParser: true, useUnifiedTopology: true},
   (err, res) => {
 
