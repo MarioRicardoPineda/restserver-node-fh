@@ -8,7 +8,7 @@ router.get('/usuario', (req, res) => {
 
   let  desde = parseInt(req.query.desde) || 0
   
-  Usuario.find({estado: false})
+  Usuario.find({estado: true})
     .skip(desde)
     .limit(5)
     .exec( (err, usuarios) => {
