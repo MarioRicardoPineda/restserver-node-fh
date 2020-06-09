@@ -51,4 +51,4 @@ const usuarioSchema = new Schema({
 
 usuarioSchema.plugin( uniqueValidator, { message: '{PATH} debe ser único' } )
 
-module.exports = model('Usuario', usuarioSchema)
+module.exports = model('usuarios', usuarioSchema)
