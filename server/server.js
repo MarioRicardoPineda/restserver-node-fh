@@ -2,7 +2,10 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 
-const { PORT, MONGO_URI } = require('./config/config')
+// const { PORT, MONGO_URI } = 
+require('./config/config')
+
+let PORT = process.env.PORT
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
@@ -10,7 +13,7 @@ app.use(express.json())
 app.use( require('./routes/usuario') )
 
 mongoose.connect(
-  MONGO_URI, 
+  process.env.MONGO_URI, 
   {useNewUrlParser: true, useUnifiedTopology: true},
   (err, res) => {
 
